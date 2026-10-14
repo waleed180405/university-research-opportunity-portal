@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Research Opportunity Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+```
+<header>
+    <h1>Research Opportunity Portal</h1>
+    <p>Discover, create, and manage university research opportunities.</p>
+</header>
+
+<main>
+    <section class="card">
+        <div class="section-heading">
+            <h2>Available Opportunities</h2>
+            <button id="loadButton" class="secondary-button" type="button">
+                Refresh
+            </button>
+        </div>
+
+        <p id="message" aria-live="polite"></p>
+
+        <div id="opportunitiesList">
+            <p>Loading research opportunities...</p>
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>Add Research Opportunity</h2>
+
+        <form id="createForm">
+            <label for="title">Research Title</label>
+            <input type="text" id="title" maxlength="150"
+                   placeholder="Enter research title" required>
+
+            <label for="description">Description</label>
+            <textarea id="description"
+                      placeholder="Describe the research opportunity"
+                      rows="4" required></textarea>
+
+            <button type="submit">Add Opportunity</button>
+        </form>
+    </section>
+
+    <section class="card">
+        <h2>Opportunity Details</h2>
+        <div id="details">
+            <p class="muted">Select an opportunity to view its details.</p>
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>Update Research Opportunity</h2>
+
+        <form id="updateForm">
+            <label for="updateId">Opportunity ID</label>
+            <input type="number" id="updateId" min="1"
+                   placeholder="Enter opportunity ID" required>
+
+            <label for="updateTitle">New Title</label>
+            <input type="text" id="updateTitle" maxlength="150"
+                   placeholder="Enter updated title" required>
+
+            <label for="updateDescription">New Description</label>
+            <textarea id="updateDescription"
+                      placeholder="Enter updated description"
+                      rows="4" required></textarea>
+
+            <button type="submit">Update Opportunity</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>University Research Opportunity Portal</p>
+</footer>
+
+<script src="script.js"></script>
+```
+
+</body>
+</html>
