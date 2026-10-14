@@ -1,0 +1,154 @@
+{
+  "info": {
+    "_postman_id": "9fdf245a-9851-4a95-bcb9-b8d2198e5723",
+    "name": "University Research Portal API.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "58892403",
+    "_collection_link": "https://go.postman.co/collection/58892403-9fdf245a-9851-4a95-bcb9-b8d2198e5723?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Create Opportunities",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"title\": \"Test Research Opportunity\",\r\n  \"description\": \"A research opportunity created for API testing.\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/opportunities",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "opportunities"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get All opportunities",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/opportunities",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "opportunities"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "get opportunities by ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/opportunities/2",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "opportunities",
+            "2"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update opportunity",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"title\": \"Updated Research Opportunity\",\r\n  \"description\": \"This research opportunity has been updated.\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/opportunities/2",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "opportunities",
+            "2"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "close opportunity",
+      "request": {
+        "method": "PATCH",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/opportunities/2/close",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "opportunities",
+            "2",
+            "close"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "delete opprotunity",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/opportunities/2",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "opportunities",
+            "2"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
