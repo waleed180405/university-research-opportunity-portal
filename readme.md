@@ -70,4 +70,5 @@ The exported Postman collection is included in `University_Research_Portal_API.j
 
 ## GitHub Repository
 
-Repository link: Add your GitHub repository URL here after creating the repository.
+ link: GitHub Repository: https://github.com/waleed180405/university-research-opportunity-portal
+
